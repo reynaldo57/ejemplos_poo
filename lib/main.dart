@@ -1,34 +1,27 @@
 
 
 void main(){
+  Universitaro juan = new Universitaro();
 
-  Trabajador susana = new Trabajador();
-  susana.nombreCompleto = "susana lopez";
-  susana.profesion = "dentista";
-  susana.experiencia = 10;
-  susana.salario = 5;
+  juan.nombre = "juan";
 
-  susana.mostrarSalarioTotal();
-  print("hola ${susana.calcularSalario()}");
-
+  juan.caracteristicaAlumno();
 }
 
-class Trabajador{
-
-
-  String? nombreCompleto;
-  String? profesion;
-  int? experiencia;
-  double? salario;
 
 
 
-  void mostrarSalarioTotal(){
-    print("$nombreCompleto esta calculando salario...");
-    print("el salario de $nombreCompleto es::: ${calcularSalario()}");
-  }
-  double calcularSalario(){
-    return salario! * 1.13;
+
+
+
+
+class Universitaro{
+
+  String? nombre;
+  String? carrera;
+
+  void caracteristicaAlumno(){
+    print("el alumno $nombre es callado");
   }
 
 
